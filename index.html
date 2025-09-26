@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arko Studios Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background: linear-gradient(180deg, #0a0a0f, #1a1a24);
+      color: white;
+      line-height: 1.6;
+    }
+
+    header {
+      background: rgba(20, 20, 40, 0.9);
+      padding: 20px 60px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    header h1 {
+      font-size: 24px;
+      font-weight: bold;
+      letter-spacing: 2px;
+    }
+
+    nav a {
+      margin: 0 15px;
+      color: #bbb;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #fff;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 100px 20px;
+      background: linear-gradient(180deg, #181828, #0e0e14);
+    }
+
+    .hero h2 {
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 20px;
+      color: #aaa;
+      max-width: 700px;
+      margin: auto;
+    }
+
+    .portfolio {
+      padding: 80px 40px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+    }
+
+    .portfolio-item {
+      background: #1f1f2e;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 0 20px rgba(0,0,0,0.5);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .portfolio-item:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 0 30px rgba(100, 100, 255, 0.6);
+    }
+
+    .portfolio-item img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+    }
+
+    .portfolio-item h3 {
+      padding: 15px;
+      font-size: 20px;
+    }
+
+    .services, .contact {
+      padding: 80px 40px;
+      text-align: center;
+      background: linear-gradient(180deg, #0e0e14, #141422);
+    }
+
+    .services h2, .contact h2 {
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+
+    .services p, .contact p {
+      color: #aaa;
+      max-width: 700px;
+      margin: auto;
+    }
+
+    .contact form {
+      margin-top: 40px;
+      display: flex;
+      flex-direction: column;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .contact input, .contact textarea {
+      margin: 10px 0;
+      padding: 15px;
+      border: none;
+      border-radius: 8px;
+      background: #1f1f2e;
+      color: white;
+    }
+
+    .contact button {
+      padding: 15px;
+      border: none;
+      background: #5a5aff;
+      color: white;
+      font-size: 16px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .contact button:hover {
+      background: #7878ff;
+    }
+
+    footer {
+      padding: 30px;
+      text-align: center;
+      background: #0a0a0f;
+      color: #777;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>[LOGO SPACE]</h1>
+    <nav>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Arko Studios</h2>
+    <p>Modern graphic design solutions for ambitious brands. We help businesses stand out with creative, innovative, and unique design work.</p>
+  </section>
+
+  <section class="portfolio" id="portfolio">
+    <div class="portfolio-item">
+      <img src="https://picsum.photos/400/300?random=1" alt="Portfolio 1">
+      <h3>Project One</h3>
+    </div>
+    <div class="portfolio-item">
+      <img src="https://picsum.photos/400/300?random=2" alt="Portfolio 2">
+      <h3>Project Two</h3>
+    </div>
+    <div class="portfolio-item">
+      <img src="https://picsum.photos/400/300?random=3" alt="Portfolio 3">
+      <h3>Project Three</h3>
+    </div>
+    <div class="portfolio-item">
+      <img src="https://picsum.photos/400/300?random=4" alt="Portfolio 4">
+      <h3>Project Four</h3>
+    </div>
+    <div class="portfolio-item">
+      <img src="https://picsum.photos/400/300?random=5" alt="Portfolio 5">
+      <h3>Project Five</h3>
+    </div>
+    <div class="portfolio-item">
+      <img src="https://picsum.photos/400/300?random=6" alt="Portfolio 6">
+      <h3>Project Six</h3>
+    </div>
+    <div class="portfolio-item">
+      <img src="https://picsum.photos/400/300?random=7" alt="Portfolio 7">
+      <h3>Project Seven</h3>
+    </div>
+    <div class="portfolio-item">
+      <img src="https://picsum.photos/400/300?random=8" alt="Portfolio 8">
+      <h3>Project Eight</h3>
+    </div>
+    <div class="portfolio-item">
+      <img src="https://picsum.photos/400/300?random=9" alt="Portfolio 9">
+      <h3>Project Nine</h3>
+    </div>
+    <div class="portfolio-item">
+      <img src="https://picsum.photos/400/300?random=10" alt="Portfolio 10">
+      <h3>Project Ten</h3>
+    </div>
+  </section>
+
+  <section class="services" id="services">
+    <h2>Our Services</h2>
+    <p>At Arko Studios, we provide cutting-edge design services including branding, UI/UX, motion graphics, and creative strategy to bring your ideas to life.</p>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2>Contact Us</h2>
+    <p>We’d love to work with you! Send us a message and we’ll get back to you as soon as possible.</p>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" rows="6" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Arko Studios. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
